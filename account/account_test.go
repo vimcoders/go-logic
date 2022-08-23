@@ -20,7 +20,7 @@ func TestMain(m *testing.M) {
 	m.Run()
 }
 func TestRegister(t *testing.T) {
-	for i := 0; i < 1000000; i++ {
+	for i := 0; i < 100000000; i++ {
 		if _, err := Register("Google", fmt.Sprintf("%v", i)); err != nil {
 			t.Error(err)
 		}
